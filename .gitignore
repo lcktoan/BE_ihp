@@ -194,3 +194,6 @@ MyApi/obj/Debug/net8.0/staticwebassets.build.json.cache
 MyApi/obj/Debug/net8.0/swae.build.ex.cache
 MyApi/obj/Debug/net8.0/ref/MyApi.dll
 MyApi/obj/Debug/net8.0/refint/MyApi.dll
+MyApi/obj/Debug/net8.0/staticwebassets/msbuild.build.MyApi.props
+MyApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MyApi.props
+MyApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MyApi.props
