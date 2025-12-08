@@ -25,5 +25,5 @@ jobs:
         run: dotnet build --no-restore ./MyApi/MyApi.csproj --configuration Release
 
       - name: Test (Xunit)
-        run: dotnet test ./MyApi_Test/MyApi_Test.csproj --no-build
+        run: dotnet test ./MyApi_Test/MyApi_Test.csproj
 
