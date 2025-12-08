@@ -24,7 +24,5 @@ jobs:
       - name: Build
         run: dotnet build ./MyApi --configuration Release
 
-      - name: Test
-        run: |
-         cd MyApi_Test
-         dotnet test ./MyApi_Test --no-build --verbosity normal
+      - name: Test (Xunit)
+        run: dotnet test --no-build --configuration Release --logger "trx;LogFileName=test_results.trx"
