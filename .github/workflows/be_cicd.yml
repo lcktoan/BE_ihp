@@ -27,5 +27,5 @@ jobs:
       - name: Test (Xunit)
         run: |
           cd MyApi_Test
-          run: dotnet test ./MyApi_Test --no-build --verbosity normal
+          dotnet test --no-build --configuration Debug
 
