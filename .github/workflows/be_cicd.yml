@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./BackendProject
+        run: dotnet restore ./MyApi
 
       - name: Build
-        run: dotnet build ./BackendProject --configuration Release
+        run: dotnet build ./MyApi --configuration Release
 
       - name: Test
-        run: dotnet test ./BackendProject --no-build --verbosity normal
+        run: dotnet test ./MyApi --no-build --verbosity normal
