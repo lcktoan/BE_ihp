@@ -26,5 +26,5 @@ jobs:
 
       - name: Test
         run: |
-         cd MyAPI_Test
+         cd MyApi_Test
          dotnet test ./MyApi_Test --no-build --verbosity normal
