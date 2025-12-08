@@ -25,4 +25,6 @@ jobs:
         run: dotnet build ./MyApi --configuration Release
 
       - name: Test
-        run: dotnet test ./MyApi --no-build --verbosity normal
+        run: |
+         cd MyAPI_Test
+         dotnet test ./MyAPI_Test --no-build --verbosity normal
