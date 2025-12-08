@@ -19,13 +19,11 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./MyApi
+        run: dotnet restore ./MyApi/MyApi.csproj
 
       - name: Build
-        run: dotnet build ./MyApi --configuration Release
+        run: dotnet build --no-restore ./MyApi/MyApi.csproj --configuration Release
 
       - name: Test (Xunit)
-        run: |
-          cd MyApi_Test
-          dotnet test --no-build --verbosity normal
+        run: dotnet test ./MyApi.Tests/MyApi.Tests.csproj --no-build --verbosity normal
 
